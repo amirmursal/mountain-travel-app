@@ -1,0 +1,66 @@
+.small {
+    background-image: url(../../../img/mountain1.jpg);
+}
+
+.large {
+    background-image: url(../../../img/mountain2.jpg);
+}
+
+.small1 {
+    background-image: url(../../../img/mountain4.jpg);
+}
+
+.large1 {
+    background-image: url(../../../img/mountain3.jpg);
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destinations .grid li {
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.destinations .grid li.small {
+    flex-basis: 30%;
+}
+
+.destinations .grid li.large {
+    flex-basis: 70%;
+}
+
+.destinations .grid li.small1 {
+    flex-basis: 30%;
+}
+
+.destinations .grid li.large1 {
+    flex-basis: 70%;
+}
+
+@media (max-width:1100px) {
+
+    .destinations .grid li.small,
+    .destinations .grid li.small1,
+    .destinations .grid li.large,
+    .destinations .grid li.large1 {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width:800px) {
+
+    .destinations .grid li.small,
+    .destinations .grid li.small1,
+    .destinations .grid li.large,
+    .destinations .grid li.large1 {
+        flex-basis: 100%;
+    }
+}
